@@ -24,7 +24,8 @@ class ProductsGridView extends ConsumerWidget {
         child: allProductLists.when(
             data: (allProducts) {
               return GridView.builder(
-                  shrinkWrap: true,
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
                   itemCount: searchText.isNotEmpty && searchList.isNotEmpty
                       ? searchList.length
                       : allProducts.length,
