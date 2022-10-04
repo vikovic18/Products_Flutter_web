@@ -8,7 +8,7 @@ class ErrorScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text(error),
+      child: Text('Reload this page'),
     );
   }
 }
